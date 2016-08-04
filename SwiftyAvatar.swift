@@ -12,19 +12,19 @@ import UIKit
     
     @IBInspectable var roundness: CGFloat = 0.0 {
         didSet{
-            layoutSubviews()
+            setNeedsLayout()
         }
     }
     
     @IBInspectable var borderWidth: CGFloat = 0.0 {
         didSet{
-            layoutSubviews()
+            setNeedsLayout()
         }
     }
     
     @IBInspectable var borderColor: UIColor = UIColor.clearColor() {
         didSet{
-            layoutSubviews()
+            setNeedsLayout()
         }
     }
     
