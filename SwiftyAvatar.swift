@@ -52,5 +52,11 @@ import UIKit
         layer.borderColor = borderColor.CGColor
         layer.backgroundColor = background.CGColor
         clipsToBounds = true
+        
+        //Code to draw a mask on top of the border to avoid the thin black border line when the avatar's border is on top of a view with the same color as the border.
+        let path = UIBezierPath(roundedRect: CGRectInset(bounds, 0.5, 0.5), cornerRadius: bounds.width / roundness)
+        let mask = CAShapeLayer()
+        mask.path = path.CGPath
+        layer.mask = mask
     }
 }
