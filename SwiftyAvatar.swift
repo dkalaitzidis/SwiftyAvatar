@@ -9,25 +9,31 @@
 import UIKit
 
 @IBDesignable class SwiftyAvatar: UIImageView {
-
-    @IBInspectable var roundness: CGFloat = 0.0 {
+    
+    @IBInspectable var Roundness: CGFloat = 0.0 {
         didSet{
             setup()
         }
     }
-
-    @IBInspectable var borderWidth: CGFloat = 0.0 {
+    
+    @IBInspectable var BorderWidth: CGFloat = 0.0 {
         didSet{
             setup()
         }
     }
-
-    @IBInspectable var borderColor: UIColor = UIColor.clearColor() {
+    
+    @IBInspectable var BorderColor: UIColor = UIColor.clearColor() {
         didSet{
             setup()
         }
     }
-
+    
+    @IBInspectable var Background: UIColor = UIColor.clearColor() {
+        didSet{
+            setup()
+        }
+    }
+    
     override var bounds: CGRect {
         get {
             return super.bounds
@@ -38,12 +44,13 @@ import UIKit
             setNeedsLayout()
         }
     }
-
+    
     func setup(){
         super.layoutSubviews()
-        layer.cornerRadius = bounds.width / roundness
-        layer.borderWidth = borderWidth
-        layer.borderColor = borderColor.CGColor
+        layer.cornerRadius = bounds.width / Roundness
+        layer.borderWidth = BorderWidth
+        layer.borderColor = BorderColor.CGColor
+        layer.backgroundColor = Background.CGColor
         clipsToBounds = true
     }
 }
