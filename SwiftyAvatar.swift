@@ -10,7 +10,7 @@ import UIKit
 
 @IBDesignable class SwiftyAvatar: UIImageView {
     
-    @IBInspectable var roundess: CGFloat = 0.0 {
+    @IBInspectable var roundness: CGFloat = 0.0 {
         didSet{
             setup()
         }
