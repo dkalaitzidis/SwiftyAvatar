@@ -1,6 +1,6 @@
 //
-//  SwiftyAvatar.swift
-//  SwiftyAvatar
+//  Swifty-Avatar.swift
+//  Swifty-Avatar
 //
 //  Created by Dimitrios Kalaitzidis on 04/08/16.
 //  Copyright © 2016 Dimitrios Kalaitzidis. All rights reserved.
@@ -9,36 +9,37 @@
 import UIKit
 
 @IBDesignable class SwiftyAvatar: UIImageView {
-    
+
     @IBInspectable var roundness: CGFloat = 0.0 {
         didSet{
-            setNeedsLayout()
+            setup()
         }
     }
-    
+
     @IBInspectable var borderWidth: CGFloat = 0.0 {
         didSet{
-            setNeedsLayout()
+            setup()
         }
     }
-    
+
     @IBInspectable var borderColor: UIColor = UIColor.clearColor() {
         didSet{
-            setNeedsLayout()
+            setup()
         }
     }
-    
+
     override var bounds: CGRect {
         get {
             return super.bounds
         }
         set {
             super.bounds = newValue
+            setup()
             setNeedsLayout()
         }
     }
-    
-    override func layoutSubviews() {
+
+    func setup(){
         super.layoutSubviews()
         layer.cornerRadius = bounds.width / roundness
         layer.borderWidth = borderWidth
