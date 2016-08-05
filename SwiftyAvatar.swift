@@ -47,7 +47,7 @@ import UIKit
     
     func setup(){
         super.layoutSubviews()
-        layer.cornerRadius = bounds.width / roundess
+        layer.cornerRadius = bounds.width / roundness
         layer.borderWidth = borderWidth
         layer.borderColor = borderColor.CGColor
         layer.backgroundColor = background.CGColor
