@@ -34,6 +34,18 @@ import UIKit
         }
     }
     
+    @IBInspectable var rotatation: Bool = false {
+        didSet{
+            setup()
+        }
+    }
+    
+    @IBInspectable var spins: Float = 0.0 {
+        didSet{
+            setup()
+        }
+    }
+    
     override var bounds: CGRect {
         get {
             return super.bounds
@@ -47,6 +59,11 @@ import UIKit
     
     func setup(){
         super.layoutSubviews()
+        
+        if(rotatation){
+            rotate()
+        }
+        
         layer.cornerRadius = bounds.width / roundness
         layer.borderWidth = borderWidth
         layer.borderColor = borderColor.CGColor
@@ -58,5 +75,15 @@ import UIKit
         let mask = CAShapeLayer()
         mask.path = path.CGPath
         layer.mask = mask
+    }
+    
+    //Spin effect, added for fun!!
+    func rotate() {
+        let rotation : CABasicAnimation = CABasicAnimation(keyPath: "transform.rotation.z")
+        rotation.toValue = NSNumber(double: M_PI * 2)
+        rotation.duration = 1
+        rotation.cumulative = true
+        rotation.repeatCount = spins
+        self.layer.addAnimation(rotation, forKey: "rotationAnimation")
     }
 }
