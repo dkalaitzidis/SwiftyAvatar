@@ -5,6 +5,6 @@ Drag 'n drop the SwiftyAvatar.swift into your project, select your UimageView an
 
 **The UiimageView must be a square with aspect ratio 1:1 or fixed width and height.**
 
-**Available properties:** Roundness, Border Width, Border Color.
+**Available properties:** Roundness, Border Width, Border Color, Background Color.
 
 **IBDesignable to see your changes in storyboard.**
