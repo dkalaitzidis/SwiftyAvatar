@@ -19,21 +19,34 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar" translatesAutoresizingMaskIntoConstraints="NO" id="JI5-P2-nEh" customClass="SwiftyAvatar" customModule="SwiftyAvatar">
-                                <rect key="frame" x="275" y="40" width="50" height="50"/>
+                                <rect key="frame" x="260" y="260" width="80" height="80"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="50" id="Bzl-F4-mcT"/>
+                                    <constraint firstAttribute="width" constant="80" id="Bzl-F4-mcT"/>
                                     <constraint firstAttribute="width" secondItem="JI5-P2-nEh" secondAttribute="height" multiplier="1:1" id="YSi-fz-H4D"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="roundness">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="JI5-P2-nEh" secondAttribute="bottom" constant="510" id="9aV-gd-5t3"/>
                             <constraint firstItem="JI5-P2-nEh" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="20" id="SzX-IE-liy"/>
+                            <constraint firstItem="JI5-P2-nEh" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="hOj-BE-yD9"/>
                             <constraint firstItem="JI5-P2-nEh" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="ylj-RW-8oe"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
+                                <exclude reference="SzX-IE-liy"/>
                                 <exclude reference="9aV-gd-5t3"/>
                             </mask>
                         </variation>
