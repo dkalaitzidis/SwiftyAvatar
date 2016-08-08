@@ -1,0 +1,5 @@
+use_frameworks!
+
+target 'SwiftyAvatar_Example' do
+  pod 'SwiftyAvatar', :path => '../'
+end
