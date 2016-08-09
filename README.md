@@ -11,3 +11,5 @@ Drag 'n drop the SwiftyAvatar.swift into your project, select your `UIImageView`
 **Available properties:** Roundness, Border Width, Border Color, Background Color & Spin (for fun :D).
 
 **IBDesignable to see your changes in storyboard.**
+
+Thanks to RishabhTayal (https://github.com/RishabhTayal) for readme spelling corrections and Pod support
