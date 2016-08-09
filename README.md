@@ -12,4 +12,4 @@ Drag 'n drop the SwiftyAvatar.swift into your project, select your `UIImageView`
 
 **IBDesignable to see your changes in storyboard.**
 
-Thanks to RishabhTayal (https://github.com/RishabhTayal) for readme spelling corrections and Pod support
+Thanks to RishabhTayal (https://github.com/RishabhTayal) for readme spelling corrections, example and Pod support
