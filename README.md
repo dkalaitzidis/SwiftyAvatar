@@ -37,8 +37,6 @@ use_frameworks!
 pod 'SwiftyAvatar', '~> 1.0'
 ```
 
-To get the full benefits import `SwiftyAvatar` wherever you import UIKit
-
 ``` swift
 import UIKit
 import SwiftyAvatar
