@@ -5,7 +5,6 @@
 [![Build Status][travis-image]][travis-url]
 [![Apache](https://img.shields.io/hexpm/l/plug.svg)](http://www.apache.org/licenses/LICENSE-2.0)
 [![CocoaPods Compatible](https://img.shields.io/badge/Pod-1.0-blue.svg)]https://img.shields.io/badge/Pod-1.0-blue.svg  
-[![Platform](https://img.shields.io/badge/Pod-1.0-blue.svg)](https://cocoapods.org/pods/SwiftyAvatar)
 
 SwiftyAvatar let's you create easily rounded or circular avatar images. Simply change the UIImageView with SwiftyAvatar class and adjust the available properties. You can see the changes in storyboard because SwiftyAvatar is @IBDesignable!
 
