@@ -61,6 +61,9 @@ avatar.roundness = 2.0
 
 ## Release History
 
+* 1.0.1
+    * Swift 3.0 support (see swift-3 branch)
+
 * 1.0
     * First release
 
@@ -68,7 +71,7 @@ avatar.roundness = 2.0
 
 We would love for you to contribute to **SwiftyAvatar**, check the ``LICENSE`` file for more info.
 
-Thanks to RishabhTayal (https://github.com/RishabhTayal) for readme spelling corrections, example and Pod support
+Thanks to RishabhTayal (https://github.com/RishabhTayal) for Pod & Swift 3.0 support
 
 ## Meta
 
