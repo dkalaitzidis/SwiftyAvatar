@@ -113,8 +113,7 @@ Pod::Spec.new do |s|
   s.screenshots     = 'http://kalai.gr/wp-content/uploads/2016/08/SwiftyAvatar-Before-169x300.png', 'http://kalai.gr/wp-content/uploads/2016/08/SwiftyAvatar-After-169x300.png'
   s.license          = { :type => 'Apache 2.0', :file => 'LICENSE' }
   s.author           = { 'Dimitrios Kalaitzidis' => 'kalaitzidis34@gmail.com' }
-  s.source           = { :git => 'https://github.com/dkalaitzidis/SwiftyAvatar.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.source           = { :git => 'https://github.com/dkalaitzidis/SwiftyAvatar.git' }
 
   s.ios.deployment_target = '8.0'
 
