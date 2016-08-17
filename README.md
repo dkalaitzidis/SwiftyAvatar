@@ -1,5 +1,5 @@
 # SwiftyAvatar
-iOS Swift avatar images with ease!
+iOS Swift class to create circular or rounded avatar images
 
 > A `UIImageView` class for creating **circular or rounded avatar images**, IBDesignable to make all changes via storyboard
 
