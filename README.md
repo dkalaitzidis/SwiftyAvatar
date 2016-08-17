@@ -1,4 +1,6 @@
 # SwiftyAvatar
+iOS Swift avatar images with ease!
+
 > A `UIImageView` class for creating **circular or rounded avatar images**, IBDesignable to make all changes via storyboard
 
 [![2.0](https://img.shields.io/badge/Swift-2.0-orange.svg)](https://developer.apple.com/swift/)
