@@ -18,7 +18,6 @@ You can see the changes in storyboard because SwiftyAvatar is @IBDesignable!
 - [x] @IBDesignable
 - [x] Border Width & Color
 - [x] Background Color (if the image has trasparent background)
-- [x] Spin animation
 
 ## Requirements
 
