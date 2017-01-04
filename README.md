@@ -3,7 +3,7 @@ iOS Swift class to create circular or rounded avatar images
 
 > A `UIImageView` class for creating **circular or rounded avatar images**, IBDesignable to make all changes via storyboard
 
-[![2.0](https://img.shields.io/badge/Swift-2.0-orange.svg)](https://developer.apple.com/swift/)
+[![3.0](https://img.shields.io/badge/Swift%203--brightgreen.svg)](https://developer.apple.com/swift/)
 [![Apache](https://img.shields.io/hexpm/l/plug.svg)](http://www.apache.org/licenses/LICENSE-2.0)
 [![CocoaPods Compatible](https://img.shields.io/badge/Pod-1.0-blue.svg)](https://img.shields.io/badge/Pod-1.0-blue.svg)
 
