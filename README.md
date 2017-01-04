@@ -32,7 +32,7 @@ You can use [CocoaPods](http://cocoapods.org/) to install `SwiftyAvatar` by addi
 ```ruby
 platform :ios, '9.0'
 use_frameworks!
-pod 'SwiftyAvatar', '~> 1.0'
+pod 'SwiftyAvatar', '~> 1.1'
 ```
 
 ``` swift
