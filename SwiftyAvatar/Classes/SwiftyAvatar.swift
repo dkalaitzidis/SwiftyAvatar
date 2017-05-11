@@ -12,25 +12,25 @@ import UIKit
     
     @IBInspectable var roundness: CGFloat = 2 {
         didSet{
-            layoutSubviews()
+            setNeedsLayout()
         }
     }
     
     @IBInspectable var borderWidth: CGFloat = 5 {
         didSet{
-            layoutSubviews()
+            setNeedsLayout()
         }
     }
     
     @IBInspectable var borderColor: UIColor = UIColor.blue {
         didSet{
-            layoutSubviews()
+            setNeedsLayout()
         }
     }
     
     @IBInspectable var background: UIColor = UIColor.clear {
         didSet{
-            layoutSubviews()
+            setNeedsLayout()
         }
     }
     
