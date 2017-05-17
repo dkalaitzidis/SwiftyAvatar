@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'SwiftyAvatar'
-  s.version          = '1.1.1'
+  s.version          = '1.1.2'
   s.summary          = 'A UIImageView class for creating circular or rounded avatar images, IBDesignable to make all changes via storyboard'
 
 # This description is used to generate tags and improve search results.
@@ -72,15 +72,24 @@ Pod::Spec.new do |s|
   With code:
 
   ```swift
-  @IBOutlet weak var avatar: SwiftyAvatar!
+  let avatar = SwiftyAvatar()
+  avatar.image = UIImage(named:"yourImage")
 
-  avatar.borderWidth = 2.0
-  avarar.borderColor = UIColor.redColor()
-  avatar.roundness = 2.0
+  or
+
+  let avatar = SwiftyAvatar(size: 50,
+                            roundess: 2,
+                            borderWidth: 1,
+                            borderColor: UIColor.orange,
+                            background: UIColor.black)
+              avatar.image = UIImage(named: "yourImage")
   ```
 
   ## Release History
-
+  * 1.1.2
+      * usage from code with SwiftyAvatar() initializer
+  * 1.1
+      * swift-3 support
   * 1.0
       * First release
 
