@@ -10,6 +10,23 @@ import UIKit
 
 @IBDesignable class SwiftyAvatar: UIImageView {
     
+    init(size:CGFloat = 200, roundess:CGFloat = 2, borderWidth:CGFloat = 5, borderColor:UIColor = UIColor.blue, background:UIColor = UIColor.clear){
+        self.roundness = roundess
+        self.borderWidth = borderWidth
+        self.borderColor = borderColor
+        self.background = background
+        
+        super.init(frame: CGRect(x: 0, y: 0, width: size, height: size))
+    }
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+    }
+    
     @IBInspectable var roundness: CGFloat = 2 {
         didSet{
             setNeedsLayout()
@@ -33,6 +50,8 @@ import UIKit
             setNeedsLayout()
         }
     }
+    
+    
     
     override func layoutSubviews() {
         super.layoutSubviews()
