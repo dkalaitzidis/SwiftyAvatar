@@ -114,17 +114,6 @@ Pod::Spec.new do |s|
   s.license          = { :type => 'Apache 2.0', :file => 'LICENSE' }
   s.author           = { 'Dimitrios Kalaitzidis' => 'kalaitzidis34@gmail.com' }
   s.source           = { :git => 'https://github.com/dkalaitzidis/SwiftyAvatar.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
-
   s.ios.deployment_target = '8.0'
-
   s.source_files = 'SwiftyAvatar/Classes/**/*'
-
-  # s.resource_bundles = {
-  #   'SwiftyAvatar' => ['SwiftyAvatar/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
 end
