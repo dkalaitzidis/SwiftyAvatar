@@ -11,7 +11,7 @@ Create awesome circular avatar images!
 ![enter image description here](http://i.imgur.com/bZFMGGj.png)
 
 ----------
-**IBInspectable** attributes accessible from the identity inspector. 
+**IBInspectable** attributes accessible from the identity inspector.
 
  - Roundness
  - Border width
@@ -39,9 +39,17 @@ Installation
 How to use
 -------------
 
-> **Storyboard:** 
+> **Storyboard:**
 
 > - Select the image you want to use as avatar and change the class to SwiftyAvatar.
+
+> **Code:**
+> - With default initializer
+>`let avatar = SwiftyAvatar()
+>avatar.image = UIImage(named:"yourImage") `
+> - With your values
+> `let avatar = SwiftyAvatar(size: 50, roundess: 2, borderWidth: 1, borderColor: UIColor.orange, background: UIColor.black)
+av.avatar = UIImage(named: "yourImage")`
 
 ----------
 
@@ -50,4 +58,3 @@ Contact & Contribute
 
  - Feel free to contact me with ideas or suggestions at kalaitzidis34@gmail.com
  - Fork the project and make your own changes
-
