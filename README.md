@@ -49,7 +49,8 @@ How to use
 >avatar.image = UIImage(named:"yourImage") `
 > - With your values
 > `let avatar = SwiftyAvatar(size: 50, roundess: 2, borderWidth: 1, borderColor: UIColor.orange, background: UIColor.black)
-av.avatar = UIImage(named: "yourImage")`
+
+avatar.image = UIImage(named: "yourImage")`
 
 ----------
 
