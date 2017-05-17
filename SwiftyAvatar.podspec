@@ -110,7 +110,7 @@ Pod::Spec.new do |s|
                        DESC
 
   s.homepage         = 'https://github.com/dkalaitzidis/SwiftyAvatar'
-  s.screenshots     = 'http://kalai.gr/wp-content/uploads/2016/08/SwiftyAvatar-Before-169x300.png', 'http://kalai.gr/wp-content/uploads/2016/08/SwiftyAvatar-After-169x300.png'
+  s.screenshots      = 'https://camo.githubusercontent.com/4313905c83d952cfad856b3d7135d84971df7f44/687474703a2f2f692e696d6775722e636f6d2f625a464d47476a2e706e67'
   s.license          = { :type => 'Apache 2.0', :file => 'LICENSE' }
   s.author           = { 'Dimitrios Kalaitzidis' => 'kalaitzidis34@gmail.com' }
   s.source           = { :git => 'https://github.com/dkalaitzidis/SwiftyAvatar.git', :tag => s.version.to_s }
