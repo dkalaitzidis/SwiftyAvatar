@@ -114,6 +114,6 @@ Pod::Spec.new do |s|
   s.license          = { :type => 'Apache 2.0', :file => 'LICENSE' }
   s.author           = { 'Dimitrios Kalaitzidis' => 'kalaitzidis34@gmail.com' }
   s.source           = { :git => 'https://github.com/dkalaitzidis/SwiftyAvatar.git', :tag => s.version.to_s }
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '9.0'
   s.source_files = 'SwiftyAvatar/Classes/**/*'
 end
