@@ -8,7 +8,7 @@
 
 import UIKit
 
-@IBDesignable class SwiftyAvatar: UIImageView {
+@IBDesignable public class SwiftyAvatar: UIImageView {
     
     init(size:CGFloat = 200, roundess:CGFloat = 2, borderWidth:CGFloat = 5, borderColor:UIColor = UIColor.blue, background:UIColor = UIColor.clear){
         self.roundness = roundess
@@ -23,7 +23,7 @@ import UIKit
         super.init(frame: frame)
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
     
@@ -53,7 +53,7 @@ import UIKit
     
     
     
-    override func layoutSubviews() {
+    override public func layoutSubviews() {
         super.layoutSubviews()
         
         layer.cornerRadius = bounds.width / roundness
