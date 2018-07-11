@@ -26,31 +26,31 @@ You can see the changes directly on the storyboard!
 Installation
 -------------
 
-> **Cocoapods:**
+**Cocoapods:**
 
-> - pod 'SwiftyAvatar', '~> 1.1'
+- pod 'SwiftyAvatar', '~> 1.1'
 
-> **Manual:**
+**Manual:**
 
-> - drag 'n drop SwiftyAvatar.swift into your project.
+- drag 'n drop SwiftyAvatar.swift into your project.
 
 ----------
 
 How to use
 -------------
 
-> **Storyboard:** 
+**Storyboard:** 
 
-> - Select the image you want to use as avatar and change the class to SwiftyAvatar.
+- Select the image you want to use as avatar and change the class to SwiftyAvatar.
 
-> **Code:**
-> - With default initializer
+**Code:**
+- With default initializer
 ```
 let avatar = SwiftyAvatar()
 avatar.image = UIImage(named:"yourImage")
 ```
 
-> - With your values
+- With your values
 ```
 let avatar = SwiftyAvatar(size: 50, 
                           roundess: 2, 
